@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGO_URI, {})
     .catch(err => console.error('Failed to connect to MongoDB', err));
 
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.send('Hello, World from Docker! :)');
 });
 
 app.listen(PORT, () => {
